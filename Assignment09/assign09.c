@@ -27,11 +27,10 @@ void Time(void)
 	minutes = (totalsecond % 3600) / 60;
 	seconds = totalsecond % 60;
 
-	printf("재생시간은 %s%d%s",
-	
-	hours > 0 ? "" : (minutes > 0 ? "" : ""),
-	hours > 0 ? hours : (minutes > 0 ? minutes : seconds),
-	hours > 0 ? "시간" : (minutes > 0 ? "분" : "초");
+	printf("재생시간은");
+	hours > 0 ? printf("%d시간", hours) : printf("");
+	minutes > 0 ? printf("%d분", minutes) : printf("");
+	seconds > 0 ? printf("%d초", seconds) : printf("");
 	
 	return;
 }
