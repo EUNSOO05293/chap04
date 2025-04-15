@@ -33,10 +33,10 @@ void RGB(void)
 	scanf("%d", &blue);
 	blue %= 255;
 
-	value += blue * 255 * 255;
+	value += blue * 255 * 255;    
 	value += green * 255;
 	value += red;
 	
-	printf("RGB 트루컬러: %06x", value);
+	printf("RGB 트루컬러: %06X", value);
 	return;
 }
