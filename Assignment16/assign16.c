@@ -9,15 +9,15 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void RGB(void);
+void Rgb(void);
 
 int main(void)
 {
-	RGB();
+	Rgb();
 	return 0;
 }
 
-void RGB(void)
+void Rgb(void)
 {
 	int red, green, blue, value = 0;
 
